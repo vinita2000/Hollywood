@@ -1,0 +1,126 @@
+  
+body
+{
+    color: #203b01;
+    text-align: center;
+    font-size: large;
+    background: #baec82;
+}
+.outer
+{
+    width: 100%;
+    margin-top: 30vh;
+}
+.hollywood , .blanks
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.blank
+{
+    border-bottom: 3px solid #3f7501;
+}
+.crossed
+{
+    text-decoration: line-through;
+}
+.popup-container
+{
+    background-color: rgba(144, 224, 136, 0.3);
+    padding:3%;
+    margin: 3%;
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup
+{
+    background-color: #73be1e;
+    border-radius: 5px;
+    box-shadow: 0 15px 10px 3px rgb(63, 117, 1);
+    padding: 5%;
+    text-align: center;
+    width: 45%;
+}
+button
+{
+    cursor: pointer;
+    background: #3f7501;
+    border-radius: 20px;
+    overflow: 0;
+    color: #fbfcfa;
+    border: 1px solid #203b01;
+    padding: 10px;
+    outline: none;
+}
+.notification-container
+{
+    background-color: rgba(144, 224, 136, 0.3);
+    border-radius: 10px 10px 0 0;
+    padding: 3%;
+    position: absolute;
+    bottom: -50px;
+    transition: transform 0.3s ease-in-out;
+    align-items: center;
+}
+.notification-container p
+{
+    margin: 0;
+}
+.show
+{
+    transform: translateX(40px) translateY(-100px);
+}
+.inner2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.input-text
+{
+    background-color:#c9e0ad;
+    border: 2px solid #65b30c;
+    border-radius: 5px;
+    outline : none;
+    color: #305802;
+    padding: 3px;
+}
+.input-container
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrong-letter
+{
+    color: #e72309;
+}
+@media(min-width: 1024px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .outer{
+        width: 600px;
+        height: 700px;
+    }
+    .inner, .hollywood, .blanks{
+        padding-top: 40px;
+    }
+    .notification-container{
+        padding: 20px;
+    }
+    
+}

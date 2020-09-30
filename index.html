@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOLLYWOOD</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="outer container">
+        <h3>Find The Hidden Movie</h3>
+        <h4>Enter a letter</h4>
+        <div class="inner container">
+
+            <div class="inner2 container">
+                <div class="input-container">
+                    <input class="input-text" id="input-text"  placeholder="enter a letter">
+                </div>
+
+                <div class="wrong-letters-container">
+                    <div id="wrong-letters" class="wrong-letters"></div>
+                </div>
+            </div>
+            
+            <div class="hollywood">
+                <h4 class="hollywood" id="letter1">H</h4>
+                <h4 class="hollywood" id="letter2">O</h4>
+                <h4 class="hollywood" id="letter3">L</h4>
+                <h4 class="hollywood" id="letter4">L</h4>
+                <h4 class="hollywood" id="letter5">Y</h4>
+                <h4 class="hollywood" id="letter6">W</h4>
+                <h4 class="hollywood" id="letter7">O</h4>
+                <h4 class="hollywood" id="letter8">O</h4>
+                <h4 class="hollywood" id="letter9">D</h4>
+            </div>
+            <div class="blanks" id="blanks">
+                <!--<div class="blank">h</div>
+                <div class="blank">e</div>
+                <div class="blank">l</div>
+                <div class="blank">l</div>
+                <div class="blank">0</div>-->
+            </div>
+        </div>
+    </div>
+    <!---popup--->
+    <div class="popup-container" id="popup-container">
+        <div class="popup">
+            <h3 id="final-message"></h3>
+            <button id="play-again">Play Again</button>
+        </div>
+    </div>
+
+    <!---used up letter-->
+    <div class="notification-container" id="notification-container">
+        <p id="notification-message"></p>
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</html>
