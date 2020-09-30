@@ -1,3 +1,3 @@
 # Hollywood
 Guess the movie name
-![]("images/wallpaper.png")
+![](images/wallpaper.png)
